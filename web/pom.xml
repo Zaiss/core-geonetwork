@@ -54,16 +54,6 @@
   <!-- FIXME set common dependencies to the root pom.xml  -->
   <dependencies>
     <dependency>
-  <groupId>${project.groupId}</groupId>
-  <artifactId>schema-iso19115-3</artifactId>
-  <version>${project.version}</version>
-</dependency>
-      <resource>
-    <directory>${project.basedir}/../schemas/sensorML/src/main/plugin</directory>
-    <targetPath>${basedir}/src/main/webapp/WEB-INF/data/config/schema_plugins</targetPath>
-  </resource>
-    
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
     </dependency>
@@ -601,14 +591,12 @@
                   <directory>${project.basedir}/../docs/manuals/target/doc</directory>
                   <targetPath>${basedir}/src/main/webapp/doc</targetPath>
                 </resource>
-                
-                
-                <resource>
-    <directory>${project.basedir}/../schemas/iso19115-3/src/main/plugin</directory>
+   <resource>
+    <directory>${project.basedir}/../schemas/sensorML/src/main/plugin</directory>
     <targetPath>${basedir}/src/main/webapp/WEB-INF/data/config/schema_plugins</targetPath>
   </resource>
-                  <resource>
-    <directory>${project.basedir}/../schemas/sensorML/src/main/plugin</directory>
+  <resource>
+    <directory>${project.basedir}/../schemas/iso19115-3/src/main/plugin</directory>
     <targetPath>${basedir}/src/main/webapp/WEB-INF/data/config/schema_plugins</targetPath>
   </resource>
               </resources>
